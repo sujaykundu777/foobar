@@ -39,7 +39,7 @@
                 var p2 = points[j]
                 if(!(p1 == p2)) {
                     var placed = false;
-                    for(var k = 0; k < 10; k++) {
+                    for(var k = 0; k < 5; k++) {
                         if(!placed) {
                             if(closest[k] == undefined) {
                                 closest[k] = p2;
@@ -48,7 +48,7 @@
                         }
                     }
 
-                    for(var k = 0; k < 10; k++) {
+                    for(var k = 0; k < 5; k++) {
                         if(!placed) {
                             if(getDistance(p1, p2) < getDistance(p1, closest[k])) {
                                 closest[k] = p2;

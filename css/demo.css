@@ -378,7 +378,7 @@ a {
 }
 
 .demo-1 .large-header {
-	background-image: url('../images/1.jpg');
+	background-image: url('../images/1.png');
 }
 
 .demo-2 .large-header {
@@ -400,7 +400,7 @@ a {
 	padding: 0;
 	color:#fff;
 	text-align: center;
-	top: 10%;
+	top: 85%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);

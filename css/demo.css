@@ -25,6 +25,7 @@ body {
 .header-logo{
 	background-image: url('../images/logo.png');
 	margin-left: 80px;
+        margin-top: 10px;
 
 }
 .m20{

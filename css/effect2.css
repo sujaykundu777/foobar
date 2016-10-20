@@ -102,11 +102,11 @@
 
 .ip-main h2 {
 	margin: 0;
-	padding: 12em 0 1em;
+	padding: 16.5em 0 1em;
 	color: #ef6e7e;
 	text-align: center;
-
-	font-size: 40px;
+  font-size: 40px;
+	font-size-adjust: auto;
 	line-height: 1;
 }
 

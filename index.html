@@ -11,64 +11,61 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-			<link rel="stylesheet" type="text/css" href="css/counter.css" />
+		<link rel="stylesheet" type="text/css" href="css/counter.css" />
 		<link rel="stylesheet" type="text/css" href="css/effect2.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/>
 		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto+Condensed' type='text/css'>
-			<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
-			<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-       <link rel="stylesheet" href="css/fakeLoader.css">
-				<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+   	<link rel="stylesheet" type="text/css" href="css/component.css" />
 
 		<script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript">
+
+	  	function togglebtn(){
+  		//get the logo
+
+			var mylogo = document.getElementById('logo-img');
+
+			//get the current value of the logo's display property
+
+			var displaySetting = mylogo.style.display;
+
+			//also get the menu btn so we can change what it says
+
+	 		var myButton = document.getElementById('open-button');
+
+	 		//now toggle the menu btn depending on the current state
+
+	 		if(displaySetting=='block'){
+		 	//logo is visible. hide it
+
+		 	mylogo.style.display='none';
+
+		 	//change btn html
+
+		 	myButton.innerHTML = '.';
+
+     	}
 
 
-<script type="text/javascript">
+   		else{
+		  // logo is hidden . Show it
 
-	  function togglebtn(){
-  //get the logo
-
-	var mylogo = document.getElementById('logo-img');
-
-	//get the current value of the logo's display property
-
-	var displaySetting = mylogo.style.display;
-
-	//also get the menu btn so we can change what it says
-
-	 var myButton = document.getElementById('open-button');
-
-	 //now toggle the menu btn depending on the current state
-
-	 if(displaySetting=='block'){
-		 //logo is visible. hide it
-
-		 mylogo.style.display='none';
-
-		 //change btn html
-
-		 myButton.innerHTML = '.';
-
-     }
+			mylogo.style.display= 'block';
 
 
-   else{
-	// logo is hidden . Show it
-
-	mylogo.style.display= 'block';
-
-
-	//change btn html
+			//change btn html
 			myButton.innerHTML= '.';
-		}
-	}
-</script>
+			}
+			}
+			</script>
 
 	</head>
 
 	<body class="demo-1" onload="togglebtn()">
-    <div class="fakeloader"></div>
+
 		<div id="ip-container" class="ip-container">
 			<!-- initial header -->
 			<header class="ip-header">
@@ -82,6 +79,7 @@
 					</svg>
 				</div>
 			</header>
+
 	<div id="large-header" class="large-header">
 
 			<!-- main content -->
@@ -94,7 +92,7 @@
 							<div class="icon-list">
 	             	<a class="navlink" href="index.html"><span>Home</span></a>
 								<a class="navlink" href="#about"><span>About</span></a>
-								<a class="navlink" href="#events"><span>Events</span></a>
+							
 
 							</div>
 						</nav>
@@ -102,57 +100,62 @@
         	<a class="menu-button" id="open-button"  onclick="togglebtn()" >.</a>
 					<canvas id="demo-canvas"></canvas>
 
-<h1 id="logo-img" class="main-title ">foo<span class="thin">bar</span></h1>
-<h2 class="cs"> COMING SOON </h2>
-<!-- Countdown for fest -->
+						<h1 id="logo-img" class="main-title ">foo<span class="thin">bar</span></h1>
+						<h2 class="cs"> COMING SOON </h2>
+						<!-- Countdown for fest -->
 
-<div class="clock clock-canvas 10 ">
-<div class="column days">
-	 <div class="timer" id="days"></div>
-	 <div class="text">DAYS</div>
-</div>
-<div class="timer days">:</div>
-<div class="column">
-	 <div class="timer" id="hours"></div>
-	 <div class="text">HOURS</div>
-</div>
-<div class="timer">:</div>
-<div class="column">
-	 <div class="timer" id="minutes"></div>
-	 <div class="text">MINUTES</div>
-</div>
-<div class="timer">:</div>
-<div class="column">
-	 <div class="timer" id="seconds"></div>
-	 <div class="text">SECONDS</div>
-</div>
-</div> <!-- End of Clock -->
+						<div class="clock clock-canvas 10 ">
+						<div class="column days">
+							 <div class="timer" id="days"></div>
+							 <div class="text">DAYS</div>
+						</div>
+						<div class="timer days">:</div>
+						<div class="column">
+							 <div class="timer" id="hours"></div>
+							 <div class="text">HOURS</div>
+						</div>
+						<div class="timer">:</div>
+						<div class="column">
+							 <div class="timer" id="minutes"></div>
+							 <div class="text">MINUTES</div>
+						</div>
+						<div class="timer">:</div>
+						<div class="column">
+							 <div class="timer" id="seconds"></div>
+							 <div class="text">SECONDS</div>
+						</div>
+						</div> <!-- End of Clock -->
 
-	 </div>
+							 </div>
 
-</div><!-- /container -->
 
-		</div> <!-- End of large-header -->
+</section>
+		<section id="about">
+
+				 <div class="container"  id="abt-box">
+                <a class="social" href="http://facebook.com/foob1.0/"><img src="images/extras/fb.png" height="40px" id="fb"></a><br>
+
+								 <h1 style="top:10%; "> FOOBAR 1.0 </h1>
+
+								 <p> Over the past semester, <b>ASCII</b> has been conducting a variety of events including but not limited to Peer-to-peer workshops on various software, technologies and programming paradigms, competitive gaming sessions, and competitions based on coding and designing among others. Preparations for FooBar, planned as the flagship event of ASCII have been on for a couple of months now, and as has been the vision of ASCII, we are keen on involving the Industry on multiple fronts. </p>
+									<br>
+								 <p><b>foobar 1.0 </b> is for us, the Computer Science and Engineering students to <b>showcase our talents in our core fields as well as other parallels</b>. Although open to all departments of CUFE and to the Management students on the Kengeri Campus, it will serve as <b>a platform for the students of Computer Science across deaneries come together and explore horizons</b>.  </p>
+									<br>
+
+<p>The theme for foobar 1.0 is ‘Wirelessly Wired’. We live today in a connected world. Everything, including humans and objects are today connected to each other either through the Internet or via local, personal and other such networks. The process, initiated with the telegraph networks of the 19th century, is quickly shifting to everything wireless, radio, Bluetooth, satellite, WLAN etc. In a world where the Internet of Things is  a major potential paradigm shift, we believe ‘Wirelessly Wired’ is apt as the theme of the first ever Foobar.</p>
+
+				 </div>
+		</section>
+
+
 		</div><!-- /container -->
 
-		<script src="js/fakeLoader.min.js"></script>
-         <script>
-             $(document).ready(function(){
-                 $(".fakeloader").fakeLoader({
-                     timeToHide:1200,
-                     bgColor:"#2ecc71",
-                     spinner:"spinner1",
-										 imagePath:"images/preloader-dark.gif" //If you want can you insert your custom image
-                 });
-             });
-         </script>
-				 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 		<script  src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data.js"></script>
 		<script type="text/javascript" src="js/timer.js"></script>
-
-
 		<script src="js/classie.js"></script>
 		<script src="js/pathLoader.js"></script>
 		<script src="js/main.js"></script>

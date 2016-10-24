@@ -23,7 +23,7 @@ body {
     color: #fff;
     display: table-cell;
     vertical-align: middle;
-    
+
 }
 
 .wrapper {
@@ -50,6 +50,10 @@ body {
 
 p {
     line-height: 27px;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 2%;
+
 }
 
 h1 {

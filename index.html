@@ -65,6 +65,12 @@
 	</head>
 
 	<body class="demo-1" onload="togglebtn()">
+		<div id="loader-wrapper">
+	    <div id="loader"></div>
+
+	    <div class="loader-section section-left"></div>
+	    <div class="loader-section section-right"></div>
+	  </div>
 
 		<div id="ip-container" class="ip-container">
 			<!-- initial header -->
@@ -149,7 +155,16 @@
 
 
 		</div><!-- /container -->
+		<script >
+	  $(document).ready(function() {
 
+	     setTimeout(function(){
+	         $('body').addClass('loaded');
+	         $('h1').css('color','#222222');
+	     }, 3000);
+
+	 });
+	  </script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 		<script  src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="crossorigin="anonymous"></script>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <!--Import Custom Stylesheet-->
+    <link type="text/css" rel="stylesheet" href="css/events.css" >
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <title> Events | Foobar</title>
+</head>
+
+<body>
+<ul id="dropdown3" class="dropdown-content">
+    <li><a href="login.php">LOG OUT</a>
+    </li>
+    <li><a href="profile.php">MY PROFILE</a>
+    </li>
+</ul>
+
+
+
+
+<div class="navbar-fixed" id="menu">
+    <nav class="black">
+        <div class="nav-wrapper" style="padding-right: 10px;padding-left: 10px;">
+            <a href="index.html" class="brand-logo"><img src="images/logo.png">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+
+
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="events.html">Events</a>
+                </li>
+
+                <li>  <a class='dropdown-button' href='#' data-activates='dropdown2'>Account</a></li>
+
+
+                <!-- Dropdown Structure -->
+
+                <ul id='dropdown1' class='dropdown-content'>
+
+                    <li><a href="user_profile.php">User Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="change_pswd.php">Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.php">Logout</a></li>
+                </ul>
+
+                <ul id='dropdown2' class='dropdown-content'>
+
+                    <li><a href="login.html">Login</a></li>
+                    <li class="divider"></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+
+
+
+            </ul>
+
+            <ul id="slide-out" class="side-nav black">
+                <a href="#" class="brand-logo"><img src="images/logo.png">
+                </a>
+
+                <li><a style="color:white" href="index.html">Home</a>
+                </li>
+                <li><a style="color:white" href="events.html">Events</a>
+                </li>
+
+
+                <li>  <a class='dropdown-button' href='#' data-activates='dropdown4'>Account</a></li>
+
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown4' class='dropdown-content'>
+
+                    <li><a href="login.html">Login</a></li>
+                    <li class="divider"></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+
+            </ul>
+
+
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal white">
+    <div class="modal-content">
+        <div class="row">
+            <a class="modal-close" style="float:right;margin-bottom:5px;color:black;font-size:1.4em;">X</a>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3" style="font-color:black;"><a href="#test1">LOGIN</a>
+                    </li>
+                    <li class="tab col s3" style="font-color:black;"><a href="#test2">SIGN UP</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <div id="test1" class="col s8">
+                <br>
+                <br>
+                <br>
+                <form method="post" action="login.php">
+                    <div class="row">
+                        <div class="input-field col s12 m12 ">
+                            <i class="small material-icons prefix">person_pin</i>
+                            <input name="email" type="email" class="validate">
+                            <label for="icon_prefix">Email</label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="input-field col s12 m12 S">
+                            <i class="small material-icons prefix">lock</i>
+                            <input name="password" type="password" class="validate">
+                            <label for="icon_prefix">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s3 offset-s3">
+                            <center>
+                                <button class="btn waves-effect waves-light" type="submit" name="submit2">LOGIN</button>
+                            </center>
+                        </div>
+
+                        <div class="col s3" style="margin-top:10px;">
+                            <center>
+                                <a href="#" style="color:black;">Forget password?</a>
+                            </center>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!-- div id with test1 ends here-->
+
+
+
+            <div id="test2" class="col s12">
+
+
+
+
+
+                <form method="post" action="register.php">
+                    <div class="row">
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">person_pin</i>
+                            <input name="name" type="text" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">mail</i>
+                            <input name="email" type="text" class="validate">
+                            <label for="icon_prefix">Email</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">lock</i>
+                            <input name="password" type="password" class="validate">
+                            <label for="icon_prefix">Password</label>
+                        </div>
+
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">lock</i>
+                            <input name="confirm" type="password" class="validate">
+                            <label for="icon_prefix">Confirm pswd</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">school</i>
+                            <input name="college" type="text" class="validate">
+                            <label for="icon_prefix">College</label>
+                        </div>
+
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">description</i>
+                            <input name="branch" type="text" class="validate">
+                            <label for="icon_prefix">Branch</label>
+                        </div>
+
+
+                        <div class="input-field">
+
+                            <input name="eventname" type="hidden" value="f" class="validate">
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">today</i>
+                            <input name="year" type="text" class="validate">
+                            <label for="icon_prefix">Year</label>
+                        </div>
+
+                        <div class="input-field col s12 m5 offset-m1">
+                            <i class="small material-icons prefix">call</i>
+                            <input name="mobile" type="text" class="validate">
+                            <label for="icon_prefix">Mobile</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input name="isEvent" type="hidden" value="f" class="validate">
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <center>
+                            <button class="btn waves-effect waves-light" type="submit" name="submit">REGISTER</button>
+                        </center>
+                    </div>
+
+                </form>
+
+
+
+
+
+            </div>
+            <!-- div id with test 2 ends here -->
+        </div>
+        <!--div class=row ends here-->
+
+
+    </div>
+    <!--   modal content ends here-->
+
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal({
+                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                    opacity: .5, // Opacity of modal background
+                    in_duration: 300, // Transition in duration
+                    out_duration: 200, // Transition out duration
+                    starting_top: '20%', // Starting top style attribute
+                    ending_top: '10%', // Ending top style attribute
+                }
+
+        );
+
+
+    });
+
+    $(".button-collapse").sideNav();
+    /*(function($) {
+     $(document).ready(function(){
+     $(window).scroll(function(){
+     if ($(this).scrollTop() > 200) {
+     $('#menu').fadeIn(500);
+     } else {
+     $('#menu').fadeOut(500);
+     }
+     });
+     });
+     })(jQuery);*/
+</script>
+
+
+<!--  modal class with id modal1 ends here-->
+
+<div class="container">
+
+    <div class="row">
+        <h2><div id="event_title">Game of Codes</div></h2><hr><h4 style="color:#428bc2;">First Prize: &#8377 1,000/-</h4><br><h4 style="color:#428bc2;">Second Prize: &#8377 500/-</h4>
+        <div style="overflow:auto;-webkit-overflow-scrolling:touch">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#introduction">Introduction</a></li>
+                <li><a data-toggle="tab" href="#rules">Rules</a></li>
+                <li><a data-toggle="tab" href="#criteria">Judging criteria</a></li>
+                <li><a data-toggle="tab" href="#contact">Contact Details</a></li>
+                <li><a data-toggle="tab" href="#venue">Venue </a></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="tab-content">
+            <div id="introduction" class="tab-pane fade in active">
+
+                <b><blockquote>Introduction</blockquote></b>
+
+
+
+                Codefights.com is a competitive programming website that allows for 2 people to challenge each other to solve simple logical programming problems quickly. 3 questions are given and each has to be solved within a time limit with less time taken meaning more points. There is no need for us to create questions and keep score as the game will do it for us.
+
+            </div>
+
+            <div id="rules" class="tab-pane fade">
+                <b><blockquote>Rules </blockquote></b>
+
+                <br>1.	Participants will be alloted a computer and an opponent and they will each answer the 3 questions; the person with the highest points qualifying for the next round.<br>
+                2.	Semi-finals and finals will be best-of-three matches.<br>
+                3.	Languages allowed are: C++, Java, Javascript, Python. No others are allowed <br>
+                4.	Decision of event head is final.<br>
+                5.	Questions will consist of incomplete/incorrect code that must give output corresponding to the question.<br>
+                6.	Code only need to be modified, not written.<br>
+                7.	Format of contest will be knockout. No. of rounds depends on turnout<br>
+
+
+            </div>
+
+            <div id="criteria" class="tab-pane fade">
+
+                <b><blockquote> Judging Will Be Based On: </blockquote></b>
+               Based on the Score of the participants
+
+
+
+
+            </div>
+            <div id="venue" class="tab-pane fade">
+                <b><blockquote>Venue</blockquote></b>
+
+                <p>Christ University Faculty Of Engineering
+                    	Open Source Lab II Block 3rd floor
+                </p>
+
+            </div>
+            <div id="contact" class="tab-pane fade">
+
+                <b><blockquote>Contact</blockquote></b>
+
+                <i class="material-icons">call</i>&nbsp Bryan Paul Robert- 7259246372 <br>
+                <i class="material-icons">call</i>&nbsp Louis Christopher  - 9844359735<br>
+                <i class="material-icons">call</i>&nbsp Manas Protim Deka - 7411219637<br>
+
+
+            </div>
+
+            <br><br>
+            <center>
+                <form method="post" action="r_team.php">
+                    <input type="hidden" name="try" value="3dc42db179c7c0672dcd34703c40f4f3">
+                    <input type="submit" name="submit" class="waves-light btn" value="register">
+                </form>
+            </center>
+
+
+        </div>
+        <br><br><br><br>
+    </div>
+</div>
+
+<footer class="footer-distributed">
+    <section class="copyright">
+        <h2></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col m4">
+                    <div class="footer-left">
+
+                        <p class="footer-links">
+                            Foobar 2016 &copy; All rights reserved.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col m8">
+                    <div class="footer-right">
+
+                        <a target="_blank" href="https://www.facebook.com/foo1.0"><img src="images/social/facebook.png"></a>
+                        <a target="_blank" href="https://www.twitter.com/#"><img src="images/social/twitter.png"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/#"><img src="images/social/instagram.png"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/user/#"><img src="images/social/youtube-play.png"></i></a>
+                        <a target="_blank" href='https://play.google.com/store/apps/#'><img alt='Get it on Google Play' src='images/social/logoplay.png'/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="../fastcdn.org/FlowType.JS/1.1/flowtype.js"></script>
+
+
+<script type="text/javascript">
+    $('body').flowtype({
+        minimum :500 ,
+        minFont :4,
+        maxFont :16,
+        maximum : 1200
+    });
+
+    $('blockquote').flowtype({
+        minimum :500 ,
+        minFont :5,
+        maxFont :20,
+        maximum : 1200
+    });
+    /*(function($) {
+     $(document).ready(function(){
+     $(window).scroll(function(){
+     if ($(this).scrollTop() > 200) {
+     $('#menu').fadeIn(500);
+     } else {
+     $('#menu').fadeOut(500);
+     }
+     });
+     });
+     })(jQuery);*/
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/flowtype.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/sidenav.js"></script>
+
+</body>
+
+</html>
+

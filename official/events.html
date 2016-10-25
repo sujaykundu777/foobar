@@ -12,12 +12,21 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.css"/>
         <script src="bootstrap/js/bootstrap.min.js"></script>
 
         <title> Events | Foobar</title>
     </head>
 
     <body>
+
+          <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+          </div>
+
     <ul id="dropdown3" class="dropdown-content">
         <li><a href="login.php">LOG OUT</a>
         </li>
@@ -97,7 +106,6 @@
             </div>
         </nav>
     </div>
-
 
 
 
@@ -690,7 +698,16 @@
             maximum : 1200
         });
     </script>
+    <script >
+    $(document).ready(function() {
 
+       setTimeout(function(){
+           $('body').addClass('loaded');
+           $('h1').css('color','#222222');
+       }, 3000);
+
+    });
+    </script>
     <script type="text/javascript">
 
         $(document).ready(function(){
@@ -711,4 +728,3 @@
     <script type="text/javascript" src="js/sidenav.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
     </body>
-

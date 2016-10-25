@@ -10,10 +10,17 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-
+    <link rel="stylesheer" type="text/css" href="css/normalize.css"/>
 </head>
 
 <body>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
 
 <header class="masthead">
 
@@ -78,7 +85,7 @@
      <div class="col-md-6 ">
          <!-- VIDEO -->
          <div class="video">
-             <iframe width="540px" height="300px" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/1YF7CdsSJGA" frameborder="0" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/1YF7CdsSJGA" frameborder="0" allowfullscreen></iframe>
              <!--<iframe src="https://player.vimeo.com/video/8478758?title=0&amp;byline=0&amp;portrait=0&amp;color=cc0000" width="560" height="315"></iframe>-->
          </div>
      </div>
@@ -168,7 +175,7 @@
             </section>
         </footer>
 
-
+</div>
 
         <!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
         <script src='js/particles.min.js'></script>
@@ -178,6 +185,17 @@
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/nav.js"></script>
 
+
+ <script >
+ $(document).ready(function() {
+
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 3000);
+
+});
+ </script>
         </body>
 
         </html>

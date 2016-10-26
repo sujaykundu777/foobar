@@ -1,3 +1,10 @@
+
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+    width:auto;
+}
+
 .videowrapper {
     float: none;
     clear: both;
@@ -14,13 +21,6 @@
     width: 100%;
     height: 100%;
 }
-/* bootstrap 3 helpers */
-
-.navbar-form input, .form-inline input {
-    width:auto;
-}
-
-
 
 header {
     height:760px;

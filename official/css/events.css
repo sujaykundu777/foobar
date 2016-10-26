@@ -1,4 +1,6 @@
-
+body{
+  background-color: #000;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -284,6 +286,17 @@ div.ri{
     background-image: url('../images/events/cover.jpg');
     background-attachment: fixed;
 
+}
+
+@media only screen and (max-width: 768px)
+{
+   #bg{
+     background-attachment: scroll;
+     background-size: contain;
+     background-position: center;
+     margin: 0;
+     padding: 0;
+   }
 }
 
 

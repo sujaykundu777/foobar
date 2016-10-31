@@ -3,7 +3,7 @@ body , .container{
 }
 #app_button{
   width: 200px;
-  height: 60px;
+  height: 40px;
 }
 #loader-wrapper {
     position: fixed;

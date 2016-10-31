@@ -1,6 +1,10 @@
 body , .container{
   background-color: #000;
 }
+#app_button{
+  width: 200px;
+  height: 60px;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;

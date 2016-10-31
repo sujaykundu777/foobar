@@ -1,4 +1,7 @@
-
+#app_button{
+  width: 200px;
+  height: 60px;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;
